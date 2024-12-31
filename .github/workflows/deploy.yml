@@ -36,7 +36,8 @@ jobs:
       - name: Deploy Flask Application
         run: |
            ls
-           nohup python3 app.py 
+           nohup python3 app.py >/dev/null 2>&1 &
+
            
       - name: health check
         run: |
