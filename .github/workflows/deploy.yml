@@ -42,6 +42,7 @@ jobs:
 
       - name: Run Gunicorn
         run: |
+           ls
            nohup python3 -m flask run --host=0.0.0.0 --port=5000 > flask.log 2>&1 &
 
 
