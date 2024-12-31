@@ -23,6 +23,9 @@ jobs:
           sudo apt install python3.12-venv
           python3 -m venv venv
           source venv/bin/activate
+      - name: Run Unit Tests
+        run: |
+          python -m unittest discover -s tests -p test_app.py
 
   # deploy:
   #   runs-on: ubuntu-latest
