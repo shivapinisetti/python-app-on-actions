@@ -36,7 +36,8 @@ jobs:
       - name: Deploy Flask Application
         run: |
           pwd
-          nohup python3 app.py
+          nohup python3 app.py &
+
           
   health:
     runs-on: self-hosted
