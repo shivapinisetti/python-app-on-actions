@@ -42,7 +42,7 @@ jobs:
           pip install flask
           pip install -r requirements.txt
           pip install flask
-          sudo nohup python3 app.py 
+          nohup python3 app.py 
           
 
           
