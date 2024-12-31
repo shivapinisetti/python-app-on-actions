@@ -42,4 +42,4 @@ jobs:
 
       - name: Run Gunicorn
         run: |
-          nohup gunicorn -w 4 -b 52.91.51.113:8000 app:app &
+          nohup gunicorn -w 4 -b 172.31.16.52:8000 app:app &
