@@ -24,9 +24,9 @@ jobs:
           python3 -m venv venv
           source venv/bin/activate
 
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
