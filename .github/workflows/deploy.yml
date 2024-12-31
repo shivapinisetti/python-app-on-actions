@@ -36,7 +36,7 @@ jobs:
       - name: Deploy Flask Application
         run: |
           pwd
-          nohup python3 app.py  
+          nohup python3 app.py & 
           disown
           echo "Flask app is running in the background"
 
