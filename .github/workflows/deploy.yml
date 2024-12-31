@@ -37,6 +37,7 @@ jobs:
         run: |
           pwd
           pip install -r requirements.txt
+          pip install flask
           sudo nohup python3 app.py 
           
 
