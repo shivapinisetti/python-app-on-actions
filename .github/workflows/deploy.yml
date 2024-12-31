@@ -36,9 +36,10 @@ jobs:
       - name: Deploy Flask Application
         run: |
            pwd
-           nohup python3 /home/ubuntu/actions-runner/_work/first_pipeline/first_pipeline/app.py >/dev/null 2>&1 &
+           nohup python3 app.py 
            sleep 10
-        # nohup python3 app.py 
+        # nohup python3 /home/ubuntu/actions-runner/_work/first_pipeline/first_pipeline/app.py >/dev/null 2>&1 &
+           
 
            
       - name: health check
