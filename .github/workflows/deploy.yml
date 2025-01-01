@@ -51,4 +51,5 @@ jobs:
             curl -s -o /dev/null -w "%{http_code}" $HEALTHCHECK_URL | grep "200" && echo "Health check passed" && exit 0 || echo "Waiting for service...";
             sleep 5;
           done;
-          echo "Health check failed" && exit 1
+          echo "Health check failed***" && exit 1
+          
