@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Setup:
+  Build-test-deploy:
     runs-on: self-hosted
 
     steps:
@@ -39,7 +39,7 @@ jobs:
           
           
   health:
-    needs: Setup 
+    needs: Build-test-deploy 
     runs-on: self-hosted
 
     steps:
