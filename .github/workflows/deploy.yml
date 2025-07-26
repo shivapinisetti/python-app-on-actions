@@ -41,7 +41,7 @@ jobs:
           nohup python3 app.py &
 
   health:
-    needs: Build-test-deploy
+    needs: "Build-test-deploy"
     runs-on: self-hosted
 
     steps:
